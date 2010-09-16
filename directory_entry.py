@@ -44,7 +44,7 @@ class directory_entry:
             if child.pathname.endswith('.py') and filetype == 'python':
                 print child.pathname
             elif filetype == 'python' and not child.pathname.endswith('.py'):
-                return None
+                pass
             if child.is_file() and headers == True:
                 y = open(child.pathname)
                 print y.readline()
